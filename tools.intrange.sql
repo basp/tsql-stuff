@@ -10,7 +10,7 @@ GO
 
 CREATE FUNCTION [tools].[intrange]
 (	
-	@from int
+	@start int
 )
 RETURNS TABLE 
 AS
