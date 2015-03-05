@@ -18,7 +18,8 @@ RETURN
 (
 	WITH dates (d) AS (
 		SELECT DATEADD(DAY, i, @start)
-		FROM tools.intrange(0))
+		FROM tools.intrange(0)
+	)
 	SELECT
 		d AS [date],
 		DATEPART(YEAR, d) AS [year],
@@ -29,7 +30,7 @@ RETURN
 		DATEPART(WEEKDAY, d) AS [weekday],
 		DATEPART(DAYOFYEAR, d) AS [dayofyear],
 		DATEPART(QUARTER, d) AS [quarter]
-	from dates
+	FROM dates
 )
 
 
