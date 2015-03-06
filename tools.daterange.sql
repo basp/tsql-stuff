@@ -1,7 +1,7 @@
 USE [sandbox]
 GO
 
-/****** Object:  UserDefinedFunction [tools].[daterange]    Script Date: 3/6/2015 12:06:52 AM ******/
+/****** Object:  UserDefinedFunction [tools].[daterange]    Script Date: 3/6/2015 1:04:59 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -17,8 +17,8 @@ RETURNS TABLE
 AS
 RETURN 
 (
-	SELECT DATEADD(DAY, ints.i, @start) as [date]
-	FROM tools.intrange(0) as ints
+	SELECT DATEADD(DAY, ints.i, @start) AS [date]
+	FROM tools.intrange(0) AS ints
 )
 
 GO

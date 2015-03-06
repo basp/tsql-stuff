@@ -1,7 +1,7 @@
 USE [sandbox]
 GO
 
-/****** Object:  UserDefinedFunction [tools].[smalldaterange]    Script Date: 3/6/2015 12:07:01 AM ******/
+/****** Object:  UserDefinedFunction [tools].[smalldaterange]    Script Date: 3/6/2015 1:05:31 AM ******/
 SET ANSI_NULLS ON
 GO
 

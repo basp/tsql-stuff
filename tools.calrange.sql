@@ -1,16 +1,17 @@
 USE [sandbox]
 GO
 
-/****** Object:  UserDefinedFunction [tools].[calrange]    Script Date: 3/5/2015 11:34:30 PM ******/
+/****** Object:  UserDefinedFunction [tools].[calrange]    Script Date: 3/6/2015 1:04:52 AM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
+
 CREATE FUNCTION [tools].[calrange]
 (	
-	@start date
+	@start date = '1970-01-01'
 )
 RETURNS TABLE 
 AS
